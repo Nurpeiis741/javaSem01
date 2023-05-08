@@ -1,9 +1,9 @@
 package Java_seminar.seminar_2.Hw;
 
 import java.util.Arrays;
-
+//Hw1
 public class Hw1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {                            
         int[] arr = {0, 1, 2, 3, -4, 5, -6, 7, 8, 9, 10, 11};
         System.out.println(Arrays.toString(arr));
         int sum = 0;
@@ -17,7 +17,7 @@ public class Hw1 {
             }
 
         System.out.println("Сумма натуральных чисел равна= "+sum);
-
+//Hw2
         boolean flag= true;
         for (int i = 1; i < arr.length; i++) {
             if (arr[i]<=arr[i-1]) {
@@ -29,28 +29,7 @@ public class Hw1 {
             }
             else {
                 System.out.println("Массив не является строго возрастающей последовательностью");
-            }
-
-            int summ = 0;
-            for (int i = 0; i < arr.length; i++){
-                if(arr[i]>=10){
-                    int num = i;
-                    summ +=num;
-                }
-            }
-            for (int i = 0;i< arr.length;i++){
-                if(arr[i]<0){
-                    arr[i] = summ;
-                }
-            }
-            System.out.println(Arrays.toString(arr));
-            int[] number = arr;
-
-
-
-
-
-
+            }        
         }
 
 
@@ -70,3 +49,19 @@ public class Hw1 {
     }
 
     }
+//HW3
+    public static void main(String[] args) {
+
+        int index = 0;
+
+        int[] arr = {1, 2, 10, 4, 11};
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= 10) {
+                index += i;
+            }
+        }
+
+        System.out.println(index);
+    }
+
