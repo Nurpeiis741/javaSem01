@@ -35,16 +35,18 @@ public class hw2 {
         int sum = 0;
         for (int i = 1; i < strNums.length; i++) {
             int number = Integer.parseInt(strNums[i]);
+            if(number == 0){
+                break;
+            }
             int previous = Integer.parseInt(strNums[i + 1]);
             if(previous < 0 ){
                 sum += number;
             }
-            if(number == 0){
-                break;
-            }
         }
         return sum;
     }
+}
+
 }
 
 
