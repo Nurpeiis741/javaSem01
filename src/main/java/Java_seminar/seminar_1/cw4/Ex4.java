@@ -20,31 +20,33 @@ public class Ex4 {
 
 //HW2
 
-import java.util.Scanner;
+
+package Java_seminar.seminar_1.hw2;
 
 public class hw2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int[] nums = new int[] {1,2,1,2,-1,1,3,1,3,-1,0};
-        int n = scanner.nextInt();
-        int summ = 0;
+        System.out.println(getSum());
 
-
-        for (int i = 0; nums > i; i++) {
-            int b = scanner.nextInt();
-            if (b<0) {
-                summ+=i-1;
+    }
+    public static int getSum()
+    {
+        String str = "1 2 1 2 -1 1 3 1 3 -1 0";
+        String[] strNums = str.split(" ");
+        int sum = 0;
+        for (int i = 1; i < strNums.length; i++) {
+            int number = Integer.parseInt(strNums[i]);
+            int previous = Integer.parseInt(strNums[i + 1]);
+            if(previous < 0 ){
+                sum += number;
             }
-            if (b == 0){
+            if(number == 0){
                 break;
             }
-
         }
-        System.out.println(summ);
-        scanner.close();
+        return sum;
     }
-
 }
+
 
 
 
