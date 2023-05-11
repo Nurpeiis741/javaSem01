@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Ex4 {
+    /**
+     *Задан целочисленный список ArrayList.
+     * Найти минимальное, максимальное и среднее из этого списка.
+     *
+     */
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 
