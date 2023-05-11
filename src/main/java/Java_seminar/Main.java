@@ -4,27 +4,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число");
-        int a = scanner.nextInt();
-        System.out.println(subtractProductAndSum(a));
-        scanner.close();
-    }
+       Vector vector = new Vector(1.0, 2.0, 3.0);
 
-    /**
-     *
-     * @param a принимаемый число
-     * @return возваврашает
-     */
-    public static int subtractProductAndSum(int a) {
-        int product = 1;
-        int summ = 0;
-        while (a != 0){
-            product *= a%10;
-            summ += a%10;
-            a/=10;
-        }
-        return  product - summ;
+        System.out.println(vector);
+        System.out.println(vector.vectorLength());
+        System.out.println("vector.vectorLength() = " + vector.vectorLength());
     }
 }
 
