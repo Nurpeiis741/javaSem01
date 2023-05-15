@@ -3,6 +3,12 @@ package Java_seminar.seminar_5.HwSeminar5.Hw2;
 import java.util.*;
 
 public class Ex2 {
+    /**
+     *Пусть дан список сотрудников:
+
+     * Написать программу, которая найдёт и выведет повторяющиеся имена с количеством повторений. Отсортировать по убыванию популярности.
+     *
+     */
     public static void main(String[] args) {
         List<String> employees = Arrays.asList(
                 "Иван Иванов",
