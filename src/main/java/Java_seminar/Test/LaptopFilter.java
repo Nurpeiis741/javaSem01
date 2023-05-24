@@ -22,7 +22,7 @@ public class LaptopFilter {
         Map<String, Object> filterParams = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
         for (Integer key : filterCriteria.keySet()) {
-            System.out.println("Введите \"" + filterCriteria.get(key) + "\":");
+            System.out.println("Введите минимальное значение для критерия \"" + filterCriteria.get(key) + "\":");
             Object value = null;
             if (key == 1 || key == 2) {
                 value = scanner.nextInt();
